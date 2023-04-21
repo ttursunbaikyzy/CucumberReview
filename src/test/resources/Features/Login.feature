@@ -35,7 +35,7 @@ Feature: test the login functionality
     And clicks on Login Button
     Then user see a message "<errorMsg>"
     Examples:
-      |username | password| errorMsg|
-      |adminx   | ssdad   | invalidCredentials|
-      |admin2   | abra   | invalidCredentials|
-      |admin3   | cadbra   | invalidCredentials|
+      | username | password    | errorMsg                 |
+      | Admin    | abracadabra | Invalid credentials      |
+      |          |             | Username cannot be empty |
+      |          | Hum@nhrm123 | Username cannot be empty |
